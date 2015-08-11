@@ -14,6 +14,14 @@
 # under the License.
 
 
+class InvalidPaddingBytes(Exception):
+    """
+    An exception raised for errors when processing the padding bytes of
+    primitive encodings.
+    """
+    pass
+
+
 class InvalidPrimitiveLength(Exception):
     """
     An exception raised for errors when processing primitives with invalid
